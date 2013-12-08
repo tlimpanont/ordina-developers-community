@@ -1,0 +1,124 @@
+/*
+Theme Name: Ordina Developers Community Theme
+Theme URI: http://ordina.nl
+Description: Ordina Developers Community Theme
+Version: 1.0
+Author: Theuy Limpanont
+Author URI: http://www.theuy.nl
+Template: bp-default
+Tags: buddypress, ordina
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html, body {
+	background: url('debut_light.png');
+}
+
+h1,h2,h3,h4,h5,h6,h7,a,li, button, input[type='submit'], input[type='button']{
+	font-family: 'Open Sans', sans-serif; 
+}
+h1,h2,h3,h4,h5,h6,h7 {
+font-weight: normal;
+}
+
+p,  a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:link, a:visited { color: #E98300; text-decoration:none; font-weight:normal; } a:hover { color:#333333;}
+
+#nav li.selected a, #nav > li.current-menu-item a, #nav > li.current_page_item a, #nav > li.current_page_ancestor a {
+    background: none repeat scroll 0 0 #E98300;
+    color: white; font-weight: bold;
+}
+
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    padding: 5px 15px;
+    text-align: left;
+    text-decoration: none;
+	font-weight:bold;
+	background: #555555;
+}
+
+#site-generator {
+    color: #4D4D4D;
+    margin: 20px;
+    text-align: center;
+    text-shadow:none;
+}
+
+div.item-list-tabs ul li a span {
+    background: none repeat scroll 0 0 #E98300;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 90%;
+    margin-left: 2px;
+    padding: 1px 6px;
+}
+
+button, a.button, input[type="submit"], input[type="button"], input[type="reset"], ul.button-nav li a, div.generic-button a, .comment-reply-link {
+   color: #666666;
+}
+
+div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {
+    background-color: #FFFFFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #666666;
+    font-weight: normal;
+}
+
+
+#header {
+
+/*background: rgb(125,126,125);
+background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(51,51,51,1) 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(51,51,51,1))); 
+background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(51,51,51,1) 100%); 
+background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(51,51,51,1) 100%); 
+background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(51,51,51,1) 100%); 
+background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(51,51,51,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#333333',GradientType=0 ); */
+background: white;
+ padding-top: 0;
+}
+
+
+#header h1 a, #desc {
+   /* text-transform:uppercase !important; color: #555555 !important; 
+	font-size: 0.45em; font-weight: normal;*/
+}
+
+.site_slogan { padding: 10px 0 0 20px; float: left;}
+
+#header h1 {
+    clear: both;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+	color: #555555 !important;
+	font-size: 1.2em !important;
+	font-weight: normal;
+}
+
+h2.pagetitle a, h2.posttitle a {
+    color: #666666;
+	font-weight: normal;
+}
+
+h2.pagetitle a:hover, h2.posttitle a:hover {
+    text-decoration: underline;
+}
+
+h2.posttitle {
+    color: #666666;
+	font-weight: normal;
+}
+#comments h3, #respond h3 {
+	font-size: 	1.4em;
+}
+
+

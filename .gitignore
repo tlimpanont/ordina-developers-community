@@ -4,6 +4,7 @@
 .cvs
 *.bak
 *.swp
+*.sql
 Thumbs.db
 wp-config.php
 wp-content/uploads/
@@ -19,4 +20,3 @@ wp-content/cache/
 wp-content/backups/
 sitemap.xml
 sitemap.xml.gz
-

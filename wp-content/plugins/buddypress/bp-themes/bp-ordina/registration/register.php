@@ -38,9 +38,10 @@
 					<?php do_action( 'bp_signup_username_errors' ); ?>
 					<input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value(); ?>" />
 
-					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
+					<label for="signup_email"><?php _e( 'Email Address', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?><span style="color: red;"> @ordina.nl werkt op dit moment niet</span></label>
 					<?php do_action( 'bp_signup_email_errors' ); ?>
-					<input type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
+					
+					<input placeholder="geen @ordina.nl a.u.b." type="text" name="signup_email" id="signup_email" value="<?php bp_signup_email_value(); ?>" />
 
 					<label for="signup_password"><?php _e( 'Choose a Password', 'buddypress' ); ?> <?php _e( '(required)', 'buddypress' ); ?></label>
 					<?php do_action( 'bp_signup_password_errors' ); ?>
@@ -62,7 +63,7 @@
 
 					<div class="register-section" id="profile-details-section">
 
-						<h4><?php _e( 'Profile Details', 'buddypress' ); ?></h4>
+						<h4><?php _e( 'Profiel informatie', 'buddypress' ); ?></h4>
 
 						<?php /* Use the profile field loop to render input fields for the 'base' profile field group */ ?>
 						<?php if ( bp_is_active( 'xprofile' ) ) : if ( bp_has_profile( 'profile_group_id=1' ) ) : while ( bp_profile_groups() ) : bp_the_profile_group(); ?>
@@ -73,7 +74,7 @@
 
 								<?php if ( 'textbox' == bp_get_the_profile_field_type() ) : ?>
 
-									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
+									<label for="<?php bp_the_profile_field_input_name(); ?>"><?php echo _e( bp_the_profile_field_name(), 'buddypress' );//bp_the_profile_field_name(); ?> <?php if ( bp_get_the_profile_field_is_required() ) : ?><?php _e( '(required)', 'buddypress' ); ?><?php endif; ?></label>
 									<?php do_action( bp_get_the_profile_field_errors_action() ); ?>
 									<input type="text" name="<?php bp_the_profile_field_input_name(); ?>" id="<?php bp_the_profile_field_input_name(); ?>" value="<?php bp_the_profile_field_edit_value(); ?>" />
 

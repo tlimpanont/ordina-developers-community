@@ -70,7 +70,7 @@ function bp_forums_filter_kses( $content ) {
 	$forums_allowedtags['code'] = array();
 	$forums_allowedtags['blockquote'] = array();
 
-	$forums_allowedtags = apply_filters( 'bp_forums_allowed_tags', $forums_allowedtags );
+	$forums_allowedtags = apply_filters( 'bp_forums_allowed_tags', array() );
 	return wp_kses( $content, $forums_allowedtags );
 }
 

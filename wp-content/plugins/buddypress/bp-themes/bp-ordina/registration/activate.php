@@ -22,7 +22,7 @@
 				<?php if ( isset( $_GET['e'] ) ) : ?>
 					<p><?php _e( 'Your account was activated successfully! Your account details have been sent to you in a separate email.', 'buddypress' ); ?></p>
 				<?php else : ?>
-					<p><?php printf( __( 'Uw account is geactiveerd! U kunt nu <a href=\"%s\">inloggen</a> met uw gebruikersnaam en wachtwoord.', 'buddypress' ), wp_login_url( bp_get_root_domain() ) ); ?></p>
+					<p>Uw account is geactiveerd! U kunt rechts op de pagina inloggen met uw gebruikersnaam en wachtwoord.</p>
 				<?php endif; ?>
 
 			<?php else : ?>
